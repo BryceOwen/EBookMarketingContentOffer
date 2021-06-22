@@ -1,0 +1,88 @@
+/* Cascading Style Sheet - Responsive Grid Styles */
+
+
+/* Phone (default) */
+
+[class^="w-"] { 
+	width: 100%;
+	float: left;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 1024px) {
+	.w-1-tab {width: 8.33%;}
+	.w-2-tab {width: 16.66%;}
+	.w-3-tab {width: 25%;}
+	.w-4-tab {width: 33.33%;}
+	.w-5-tab {width: 41.66%;}
+	.w-6-tab {width: 50%;}
+	.w-7-tab {width: 58.33%;}
+	.w-8-tab {width: 66.66%;}
+	.w-9-tab {width: 75%;}
+	.w-10-tab {width: 83.33%;}
+	.w-11-tab {width: 91.66%;}
+	.w-12-tab {width: 100%;}
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1366px) {
+	.w-1 {width: 8.33%;}
+	.w-2 {width: 16.66%;}
+	.w-3 {width: 25%;}
+	.w-4 {width: 33.33%;}
+	.w-5 {width: 41.66%;}
+	.w-6 {width: 50%;}
+	.w-7 {width: 58.33%;}
+	.w-8 {width: 66.66%;}
+	.w-9 {width: 75%;}
+	.w-10 {width: 83.33%;}
+	.w-11 {width: 91.66%;}
+	.w-12 {width: 100%;}
+}
+
+
+/* *****  Alternate Classes (i.e., 'col-' vs 'w-')  ***** */
+
+/* Phone (default) */
+
+[class^="col-"] { 
+	width: 100%;
+	float: left;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 700px) {
+	.col-1-tab {width: 8.33%;}
+	.col-2-tab {width: 16.66%;}
+	.col-3-tab {width: 25%;}
+	.col-4-tab {width: 33.33%;}
+	.col-5-tab {width: 41.66%;}
+	.col-6-tab {width: 50%;}
+	.col-7-tab {width: 58.33%;}
+	.col-8-tab {width: 66.66%;}
+	.col-9-tab {width: 75%;}
+	.col-10-tab {width: 83.33%;}
+	.col-11-tab {width: 91.66%;}
+	.col-12-tab {width: 100%;}
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1025px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+

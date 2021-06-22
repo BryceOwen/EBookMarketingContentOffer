@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+Team Members: Mina Robinson, Bri Covert, and Bryce Owen
+-->
+
+<head>
+
+<!-- TITLE -->
+<title>Dear All, Please Stop Telling Me I'm Getting A Barista Degree Ebook</title>
+
+<!-- META DATA -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- WEB FONTS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|Arapey|Crimson+Text">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+
+<!-- ICON LIBRARIES -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS INCLUDES-->
+<link rel="stylesheet" href="lib/css/styles.css">
+<link rel="stylesheet" href="lib/css/grid.css">
+</head>
+
+<!-- HTML STARTS HERE -->
+<body>
+<main>
+<div class="w-6-tab w-6">
+<h1 class="themeColor">Dear All, <br>Please Stop Telling Me I'm Getting A Barista Degree</h1>
+<hr>
+<p>Author Bri Covert showcases stunning artwork in her autobiographical art collection titled <em>Dear All, Please Stop Telling Me I'm Getting A Barista Degree</em>. The book portrays a series of watercolor painting and sketches with tips and tricks for aspiring artists. With experiences dispelling sterotypes and stigmas, the work is meant to inspire audiences and portray how art can be pursued in higher education.</p>
+<button onclick="openModal()">GET YOUR FREE COPY!</button>
+</div>
+<div class="w-6-tab w-6"><img src="lib/img/dummy.png" alt="Digital e-reader showing book: Dear All, Please stop telling me I'm getting a barista degree"></div>
+<div class="w-6-tab w-6" style="padding-left: 4%">
+    <h2>Bri Covert</h2>
+    <img src="lib/img/Bri%20Covert%20Signature.png" style="width: 30%;" alt="Bir Covert Signature"></div>
+</main>
+    <div style="height:43em; background-color: #a5c9ae">
+        <Div style = " height: 4em"><p style="text-align: center; font-family: Raleway; color: azure; font-size: 2.5em; text-shadow: 1px 1px 2px black, 0 0 7px lightblue, 0 0 5px azure;">Featured Artwork</p></Div>
+        <div class ="photorow" style=" height: 25.5em;">
+            <div class="photocolumn"><p style= text-align:center><img src="lib/img/Watercolor1.png" alt="Watercolor Bridge" style="width:55%; border: 1px solid #ddd; border-radius: 4px; padding: 5px;"></p></div>
+            <div class="photocolumn"><p style= text-align:center><img src="lib/img/Watercolor2.png" alt="Watercolor Lake Landscape" style="width:55%; border: 1px solid #ddd; border-radius: 4px; padding: 5px;"></p></div>
+            <div class="photocolumn"><p style= text-align:center><img src="lib/img/Watercolor3.png" alt="Watercolor Starry Night Sky" style="width:55%; border: 1px solid #ddd; border-radius: 4px; padding: 5px;"></p></div>
+            </div>
+        <div style=" height: 20 em;">
+        <p style="text-align: center; font-family: Raleway; color: azure; font-size: 2.5em; text-shadow: 1px 1px 2px black, 0 0 7px lightblue, 0 0 5px azure;padding: 10px">Follow Bri on Instagram<br><a href="https://www.instagram.com/bri.covert.art/"><img src="lib/img/Instagram2.png" style="height: 60px; width: 60px;padding: 10px" alt="Instagram Icon"></a></p>
+        </div>
+    </div>
+<footer>
+<p><img src="lib/img/Bri%20Covert%20Logo.png" style="width: 150px; height: 150px" alt="Bri Covert watercolor Art Logo"></p>
+<p id="copyright"></p>
+</footer>
+
+<!-- POP-UP -->
+<div id="modal" class="modal">
+<div class="modal-content animate-zoom">
+<header><i onclick="closeModal()" class="fa fa-remove pointer"></i></header>
+<div>
+<h1>Receive your free ebook!</h1>
+
+<!-- CONTENT OFFER FORM -->
+	<form name=offer action="lib/php/thanks.php" method=post>
+	<p><input type=text name=firstname placeholder="First Name" required></p>
+	<p><input type=text name=lastname placeholder="Last Name" required></p>
+	<p><input type=email name=email placeholder="Email" required></p>
+	<p><button type=submit>REQUEST EBOOK DOWNLOAD</button></p>
+	</form>
+
+</div>
+</div>
+</div>
+
+<!-------------------------- No HTML Below This Line -------------------------->
+
+<script>
+var year = new Date();
+var copyright = document.getElementById("copyright");
+copyright.innerHTML = "&copy; " + year.getFullYear() + " Bri Covert.  All rights reserved.</p>";
+
+function openModal() {
+	var modal = document.getElementById("modal").style.display = "block";
+}
+function closeModal() {
+	var modal = document.getElementById("modal").style.display = "none";
+}
+</script>
+</body>
+</html>
